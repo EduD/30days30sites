@@ -1,0 +1,127 @@
+/* I made this website in a few minutes */
+
+/*------------------
+Colors:
+#524261
+#7b6392
+#2e2e2e
+#fff
+Font:;
+Futura LT W01 Light
+-------------------*/
+body{
+	font-family: "Liberation Sans", sans-serif;
+}
+/*------------------
+	General Class
+--------------------*/
+.container{
+	max-width: 960px;
+	margin: 0px auto;
+}
+.container::after , .container::before{
+	content: '';
+	display: table;
+	clear: both;
+}
+/*------------------
+	Header
+--------------------*/
+.header{
+	background: #fff;	
+	padding: 40px 0px;	
+}
+.header-nav{
+	float: left;	
+}
+.header-bnt{
+	float: right;
+	border: 2px solid #524261;
+	color: #7b6392;	
+	padding: 20px 25px;
+	font-size: 0.875em; /* 14px */
+	text-decoration: none;
+	transition: all .4s ease-in-out;
+}
+.header-bnt:hover{
+	background: rgb(123, 99, 146, 0.2);
+}
+.header-nav li{
+	display: inline-block;
+}
+.header-nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #524261;	
+	font-size: 1.125em; /* 18px */
+	margin: 0px 10px;
+	transition: all .4s ease-in-out;
+}
+.header-nav a:hover{
+	color: #7b6392;
+}
+/*------------------
+	Main
+--------------------*/
+.main{	
+	background: url("../img/bg.jpg") no-repeat center center;	
+	background-size: cover;
+	padding: 250px 0px;
+	text-align: center;
+	color: #fff;	
+}
+.main h1{
+	font-style: italic;
+	font-size: 2em; /* 32px */
+}
+.main h1::before{
+	content: '- ';
+	display: inline;
+}
+.main h1::after{
+	content: ' -';
+	display: inline;
+}
+.main h2{
+	font-weight: bold;
+	font-size: 3em; /* 48px */
+	margin: 40px 0px;
+}
+.main p{
+	font-size: 0.875em; /* 14px */
+}
+.main-bnt{
+	background: #7b6392;
+	width: 200px;
+	padding: 20px 10px;
+	display: block;
+	margin: 40px auto 0px auto;
+	text-decoration: none;
+	color: #fff;
+	transition: all .4s ease-in-out;
+}
+.main-bnt:hover{
+	background: #524261;
+}
+/*------------------
+	Footer
+--------------------*/
+.footer{
+	background: #2e2e2e;
+	padding: 20px 0px;
+}
+.footer p{
+	color: #fff;
+	float: left;
+}
+.footer nav{
+	float: right
+}
+.footer li{
+	display: inline-block;
+}
+.footer nav li a{
+	color: #fff;
+	margin: 0px 10px;
+}
