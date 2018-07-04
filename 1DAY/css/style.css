@@ -1,140 +1,212 @@
-/*-----------------------
- Class auxiliary 
------------------------*/
-.h1-style{
-	text-align: center;
-	font-weight: normal;
-	padding: 40px 0;
-	font-size: 24px;	
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 01(one)
+  Original: https://www.w3schools.com/bootstrap/trybs_theme_me_complete.htm
+  Ps: pure css
+*/
+
+/* reset */
+body, h1, h2, h3, p, ul{
+  padding: 0px;
+  margin: 0px;
 }
-.p-style{
-	padding: 40px 0;
-	text-align: center;
-	font-size: 20px;
+img{
+  display: block;
 }
-/*-----------------------
- General 
------------------------*/
- body {
-   	font: 20px Montserrat, sans-serif;   
- }
-.content{
-	max-width: 960px;
-	width: 90%;
-	margin:  0 auto;
+body{
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #777;
 }
-.section{
-	float: left;
-	width: 100%;
+* {
+  box-sizing: border-box; 
 }
-/*-----------------------
- Header 
------------------------*/
-.header{	
-	display: relative;
-	background: #e7e7e7;	
-	padding-top: 30px;
-	width: 100%;
-	height: 80px;	
+.container{
+  max-width: 960px;
+  margin: 0px auto;
 }
-.header-logo{
-	float: left;
+.container::after, .container::before{
+  content: '';
+  display: table;
+  clear: both;
 }
-.header-nav{
-	float: right;
-	font-size: 12px;
-	text-transform: uppercase;
+/* Menu */
+.menu{
+  background: #f8f8f8;
+  padding: 15px 0px;
 }
-.header-nav ul li{
-	display: inline-block;
-	margin-left: 20px;
+.menu-logo{
+  float: left;
+  font-size: 1.125em; /* 18px */
+  text-decoration: none;
+  color: #5e5e5e;
+  line-height: 1.25em; /* 20px */
+  margin-left: 10px; 
+  padding: 10px 0px;
 }
-.header-nav ul li a:hover{
-	color: #1abc9c;
+.menu-nav{
+  float: right;
+  margin-right: 10px; 
 }
-/*-----------------------
- Main (who am i?) 
------------------------*/
-.main{
-	background: #1abc9c;
-	color: #fff;
+.menu-nav li{
+  display: inline-block;
 }
-.main img{	
-	border-radius: 50%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.menu-nav a.current-page{
+  color: #000;
 }
-/*-----------------------
- Section 1 (what am i?) 
------------------------*/
-.section-1{
-	background: #474e5d;
-	color: #fff;
-	padding-bottom: 40px;
+.menu-nav a{
+  color: #5e5e5e;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 0.75em; /* 12px */
+  text-transform: uppercase;
+  letter-spacing: 0.3125em; /* 5px */
+  line-height: 1.25em; /* 20px */
 }
-.section-1 .p-style{
-	padding: 0px;	
+.menu-nav a:hover{
+  color: #1abc9c;
 }
-/*-----------------------
- Section 2 (where to find me?) 
------------------------*/
-.section-2{
-	color: #777;	
+/* intro */
+.intro{
+  background: #1abc9c;
+  color: #fff;
+  text-align: center;
+  padding: 70px 15px;
 }
-.row{
-	float: left;
-	width: 100%;	
+.intro h2{
+  margin: 20px 0px 45px 0px;
+  font-size: 1.5em; /* 24px */
+  font-weight: 500;
 }
-.section-2-col{
-	width: 32%;	
-	margin-right: 2%;
-	margin-bottom: 2%;
-	float: left;
+.intro img{
+  max-width: 100%;
+  margin: 0px auto;
+  border-radius: 50%;
+  margin-bottom: 45px;
 }
-.section-2-col:last-child{
-	margin-right: 0;
-}
-.col-p{
-	margin-bottom: 10px;
-}
-/*-----------------------
- Footer
------------------------*/
-.footer{
-	background: #333;
-	display: block;
-	clear: both;
-}
-.footer p{
-	text-align: center;
-	color: #fff;
-	font-size: 16px;
-	padding: 70px 0;
+.intro p{
+  margin: 20px 0px 10px 0px;
+  font-size: 1.5em; /* 24px */
+  font-weight: 500;
 }
 
-@media (max-width: 767.9px){
-	.section-2-col{
-		width: 100%;
-		margin: 0;
-		float: none;
-	}
-	.row{
-		float: none;
-	}
-	.col-p{
-		padding-top: 10px;
-		text-align: center;
-	}
-	.section-2-col:first-child{
-		padding-top: 0;
-	}
-	.section-2-col:last-child{
-		padding-bottom: 10px;
-	}
-	.col-img img{	
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	}
+/* section what */
+.what{
+  background: #474e5d;
+  color: #fff;
+  text-align: center;
+  padding: 70px 15px;
+}
+.what h2{
+  margin: 20px 0px 45px 0px;
+  font-size: 1.5em; /* 24px */
+  font-weight: 500;
+}
+.what p{
+  margin-bottom: 10px;
+  font-size: 1em; /* 16px */
+  font-weight: 400;
+  line-height: 1.8em; /* 28.8px */
+}
+.what a{
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5em; /* 24px */
+  font-weight: 400;
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+.what a:hover{
+  background: #e6e6e6;
+}
+
+/* section where */
+.where{
+  text-align: center;
+  padding: 70px 0px;
+}
+.where h2{
+  margin: 20px 0px 45px 0px;
+  font-size: 1.5em; /* 24px */
+  font-weight: 500;
+}
+.where-list{
+  width: 300px;
+  float: left;
+  margin: 0px 10px 20px 10px;
+}
+.where-list p{
+  font-size: 1em; /* 16px */
+  font-weight: normal;
+}
+.where-list img{
+  max-width: 100%;
+}
+
+/* footer */
+.footer{
+  background: #2f2f2f;
+  color: #fff;
+  text-align: center;
+  padding: 70px 15px;
+}
+.footer a{
+  color: #337ab7;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #23527c;
+  text-decoration: underline;
+}
+
+/* Responsivo
+  Breakpoints:
+  * acima de 960 - desktop
+  * entre 740 e 960 - tablet
+  * abaixo de 739 - mobile
+  obs: 'only screen' significa que eu so quero essa quebra para tela do dispositivo, e nao para impressoes por exemplo
+ */
+@media only screen and (max-width: 739px){ /* mobile */
+  .container{
+    max-width: 300px;
+  }
+  /* menu */
+  .menu{
+    text-align: center;
+  }
+  .menu-logo, .menu-nav{
+    float: none;
+    margin: 0px;
+  }
+  .menu-nav{
+    margin-top: 20px;
+  }
+
+  /* where */
+  .where-list{
+    margin: 0px 0px 40px 0px;
+  }
+  
+
+  /* footer */
+  .footer p{
+    font-size: 0.875em; /* 14px */
+  }
+}
+/* 980px pq a barra padraoo de scroll tem cerca de 20px */
+@media only screen and (min-width: 740px) and (max-width: 980px){ /* tablet */
+  .container{
+    max-width: 720px;
+  }
+  .where-list{
+    width: 720px;
+    float: none;
+    margin: 0px 0px 40px 0px;
+  }
+  .where-list img{
+    margin: 0px auto;
+  }
 }
