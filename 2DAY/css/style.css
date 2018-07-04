@@ -1,127 +1,149 @@
-/* I made this website in a few minutes */
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 02(two)
+  Original: https://www.wix.com/website-template/view/html/1907?originUrl=http://www.wix.com/website/templates/html/events/1&bookName=&galleryDocIndex=6&category=events&utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_2&utm_term=2018-07-04
+  Ps: pure css
+*/
 
-/*------------------
-Colors:
-#524261
-#7b6392
-#2e2e2e
-#fff
-Font:;
-Futura LT W01 Light
--------------------*/
+/* reset */
+body, h1, h2, h3, p, ul{
+  padding: 0px;
+  margin: 0px;
+}
+img{
+  display: block;
+}
 body{
-	font-family: "Liberation Sans", sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background:#fff;
 }
-/*------------------
-	General Class
---------------------*/
+* {
+  box-sizing: border-box; 
+}
 .container{
-	max-width: 960px;
-	margin: 0px auto;
+  max-width: 960px;
+  margin: 0px auto;
 }
-.container::after , .container::before{
-	content: '';
-	display: table;
-	clear: both;
+.container::after, .container::before{
+  content: '';
+  display: table;
+  clear: both;
 }
-/*------------------
-	Header
---------------------*/
-.header{
-	background: #fff;	
-	padding: 40px 0px;	
+.menu-nav ul li a.current-color{
+  color: #7b6392;
 }
-.header-nav{
-	float: left;	
+/* menu */
+.menu{
+  text-align: center;
+  padding: 40px 10px;
 }
-.header-bnt{
-	float: right;
-	border: 2px solid #524261;
-	color: #7b6392;	
-	padding: 20px 25px;
-	font-size: 0.875em; /* 14px */
-	text-decoration: none;
-	transition: all .4s ease-in-out;
+.menu-nav ul{
+  float: left;
+  margin: 20px 20px 0px 40px;
 }
-.header-bnt:hover{
-	background: rgb(123, 99, 146, 0.2);
+.menu-nav ul li{
+  display: inline;
 }
-.header-nav li{
-	display: inline-block;
+.menu-nav ul li a{
+  padding: 10px;
+  text-decoration: none;
+  color: #524261;
 }
-.header-nav a {
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	color: #524261;	
-	font-size: 1.125em; /* 18px */
-	margin: 0px 10px;
-	transition: all .4s ease-in-out;
+.menu-nav ul li a:hover{
+  color: #7b6392;
 }
-.header-nav a:hover{
-	color: #7b6392;
+.menu-button{
+  color: #7b6392;
+  float: right;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-right: 60px;
+  border: 2px solid;
 }
-/*------------------
-	Main
---------------------*/
-.main{	
-	background: url("../img/bg.jpg") no-repeat center center;	
-	background-size: cover;
-	padding: 250px 0px;
-	text-align: center;
-	color: #fff;	
+.menu-button:hover{
+  background: #e5e5e5;
+}
+
+/* main */
+.main{
+  background: url('../img/bg.jpg') no-repeat no-repeat center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  text-align: center;
 }
 .main h1{
-	font-style: italic;
-	font-size: 2em; /* 32px */
-}
-.main h1::before{
-	content: '- ';
-	display: inline;
-}
-.main h1::after{
-	content: ' -';
-	display: inline;
+  font-size: 5em; /* 80px */
+  color: #fff;
+  font-weight: 400;
+  margin: 40px 0px 40px 0px;
 }
 .main h2{
-	font-weight: bold;
-	font-size: 3em; /* 48px */
-	margin: 40px 0px;
+  font-size: 1.875em; /* 30px */
+  font-weight: 400;
+  font-style: italic;
+  font-family: cursive;
+  color: #fff;
+}
+.main h2::before,.main h2::after{
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+.main h2::before{
+  margin: 10px 20px 10px 0px;
+}
+.main h2::after{
+  margin: 10px 0px 10px 20px;
 }
 .main p{
-	font-size: 0.875em; /* 14px */
+  display: inline-block;
+  color: #fff;
+  font-size: 0.9375em; /* 15px */
 }
-.main-bnt{
-	background: #7b6392;
-	width: 200px;
-	padding: 20px 10px;
-	display: block;
-	margin: 40px auto 0px auto;
-	text-decoration: none;
-	color: #fff;
-	transition: all .4s ease-in-out;
+.main-p::after{
+  content: '|';
+  display: inline-block;
+  padding: 0px 10px;
 }
-.main-bnt:hover{
-	background: #524261;
+.main-button{
+  display: block;
+  text-decoration: none;
+  background: #7b6392;
+  color: #fff;
+  width: 140px;
+  margin: 40px auto 0px auto;
+  padding: 10px 0px;
 }
-/*------------------
-	Footer
---------------------*/
+.main-button:hover{
+  background: #524261;
+}
+
+/* footer */
 .footer{
-	background: #2e2e2e;
-	padding: 20px 0px;
+  background: #2e2e2e;
+  color: #fff;
+  padding: 20px 10px 40px 10px;
 }
 .footer p{
-	color: #fff;
-	float: left;
+  float: left;
 }
-.footer nav{
-	float: right
+.footer ul{
+  float: right;
 }
-.footer li{
-	display: inline-block;
+.footer ul li,.footer ul li a img{
+  display: inline;
 }
-.footer nav li a{
-	color: #fff;
-	margin: 0px 10px;
+.footer ul li a img{
+  padding: 0px 10px;
+}
+.footer p a{
+  color: #337ab7;
+  text-decoration: none;
+}
+.footer p a:hover{
+  color: #337ab7;
+  text-decoration: underline;
 }
