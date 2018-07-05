@@ -16,7 +16,6 @@ img{
 body{
   font-family: Helvetica, sans-serif;
   font-size: 16px;
-  background:#fff;
 }
 * {
   box-sizing: border-box; 
@@ -37,6 +36,7 @@ body{
 .menu{
   text-align: center;
   padding: 40px 10px;
+  background: #fff;
 }
 .menu-nav ul{
   float: left;
@@ -71,7 +71,7 @@ body{
   background-size: cover;
   padding: 100px 0px 100px 0px;
   text-align: center;
-}
+} 
 .main h1{
   font-size: 5em; /* 80px */
   color: #fff;
@@ -146,4 +146,72 @@ body{
 .footer p a:hover{
   color: #337ab7;
   text-decoration: underline;
+}
+
+/* responsivo 
+  breakpoints
+  960 - desktop
+  740 - 960 - tablet
+  739 ou menos - mobile
+*/
+/* mobile */
+@media only screen and (max-width: 739px){
+  .container{
+    width: 300px;
+  }
+  /* menu */
+  .menu-nav ul{
+    float: none;
+    margin: 0px 0px 10px 0px;
+  }
+  .menu-nav ul li{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .menu-nav ul li a{
+    border: 1px solid;
+    padding: 5px 10px;
+  }
+  .menu-button{
+    float: none;
+    margin: 0px auto;
+  }
+
+  /* main */
+  .main{
+    padding: 50px 0px 50px 0px;
+  }
+  .main h1{
+    font-size: 2.5em; /* 40px */
+    margin: 40px 0px 40px 0px;
+  }
+  .main h2{
+    font-size: 1.125em; /* 20px */
+  }
+  .footer{
+    text-align: center;
+  }
+  .footer p{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .footer ul{
+    float: none;
+  }
+
+}
+@media only screen and (min-width: 740px) and (max-width: 959px){
+  .container{
+    width: 740px;
+  }
+  .menu-nav ul{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .menu-button{
+    float: none;
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+  }
 }
