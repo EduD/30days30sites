@@ -1,0 +1,73 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 03(three)
+  Original: https://www.wtc.com/memorial?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_3&utm_term=2018-07-06
+  Ps: pure css
+*/
+
+/* reset */
+body, h1, h2, h3, p, ul{
+  padding: 0px;
+  margin: 0px;
+}
+img{
+  display: block;
+}
+body{
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box; 
+}
+.container{
+  max-width: 960px;
+  margin: 0px auto;
+}
+.container::after, .container::before{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* menu */
+.menu{
+  background: #fff;
+  padding: 0px 10px;
+}
+.menu-logo{
+  width: 144px;
+  height: 125px;
+  background-position: -1px -1px;
+  margin-left: 10px;
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+.menu-logo span{
+  display: none;
+}
+.menu-nav{
+  display: block;
+  float: right;
+  width: auto;
+  height: 90px;
+  text-align: center;
+  margin: 16px 0px;
+}
+.menu-nav ul li{
+  display: inline-block;
+}
+.menu-nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #292929;
+  padding: 35px 10px;
+  display: block;
+  font-size: 0.812em; /* 13px */
+  height: 90px;
+}
+.menu-nav a:hover{
+  background: #e5e5e5;
+}
