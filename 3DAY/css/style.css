@@ -101,6 +101,8 @@ body{
   width: 100%;
   padding: 300px 0px;
 } 
+
+/* item */
 .item{
   background: #e5e5e5;
   float: left;
@@ -137,6 +139,7 @@ body{
 
 /* map */
 .map img{
+  max-width: 100%;
   margin-left: 20px;
   margin: 0px 0px 80px 20px;
 }
@@ -262,4 +265,144 @@ body{
 .footer-bottom a{
   color: #02b5de;
   text-decoration: none;
+}
+
+/* Responsivo
+  * Breakpoints
+  * more than 960px - desktop
+  * between 740px and 959px - tablet
+  * less than 739px - mobile
+*/
+
+/* mobile */
+@media only screen and (max-width: 739px){
+  .container{
+    max-width: 300px;
+  }
+
+  /* menu */
+  .menu-logo{
+    float: none;
+    margin: 0px auto;
+  }
+  .menu-nav{
+    height: 80px;
+  }
+  .menu-nav ul{
+    float: none;
+  }
+  .menu-nav a{
+    padding: 10px;
+    height: 40px;
+  }
+  .menu-nav:hover .menu-dropdown {display: none;}
+
+  /* item */
+  .item{
+    background: #e5e5e5;
+    float: none;
+    width: 300px;
+    margin: 40px 0px 40px 0px;
+    padding: 20px 10px;
+  }
+  .item-div-2 h2{
+    text-align: center;
+  }
+  .item-div-2 a{
+    display: block;
+    margin: 0px auto;
+    width: auto;
+    text-align: center;
+  }
+
+  /* map */
+  .map img{
+    margin: 0px 0px 40px 0px;
+  }
+
+  /* footer */
+  .footer-break-logo{
+    margin: 20px auto 0px auto;
+    display: block;
+    float: none;
+  }
+  .footer-break-nav{
+    float: none;
+   text-align: center;
+  }
+  .footer-list, .footer-right{
+    display: none;
+  }
+  .footer-bottom p{
+    margin: 10px 0px;
+  }
+  .footer-bottom a{
+    color: #02b5de;
+    text-decoration: none;
+  }
+}
+/* table */
+@media only screen and (min-width: 740px) and (max-width: 959px){
+  .container{
+    max-width: 740px;
+  }
+
+  /* menu */
+  .menu-logo{
+    float: none;
+    margin: 0px auto;
+  }
+  .menu-nav{
+    height: 40px;
+  }
+  .menu-nav ul{
+    float: none;
+  }
+  .menu-nav a{
+    padding: 10px;
+    height: 40px;
+  }
+  .menu-nav:hover .menu-dropdown {display: none;}
+
+ /* item */
+ .item{
+  float: none;
+  margin: 60px auto 60px auto;
+}
+.item-div-2 h2{
+  text-align: center;
+}
+.item-div-2 a{
+  display: block;
+  margin: 0px auto;
+  width: auto;
+  text-align: center;
+}
+
+   /* map */
+   .map img{
+    margin: 0px 10px 40px 10px;
+    max-width: 720px;
+  }
+
+  /* footer */
+  .footer-break-logo{
+    margin: 20px auto 0px auto;
+    display: block;
+    float: none;
+  }
+  .footer-break-nav{
+    float: none;
+   text-align: center;
+  }
+  .footer-list, .footer-right{
+    display: none;
+  }
+  .footer-bottom p{
+    margin: 10px 0px;
+  }
+  .footer-bottom a{
+    color: #02b5de;
+    text-decoration: none;
+  }
 }
