@@ -90,3 +90,180 @@ a.header-btn:hover {
   color: #fff;
   background: #459FED;
 }
+
+/* Main */
+.main-container {
+  display: flex;
+}
+
+/* SideBar */
+.side-bar {
+  flex: 1;
+  max-width: 300px;
+  padding: 60px 20px 40px 40px;
+  margin-right: 10px;
+  border-right: 1px solid #E8EAEB;
+}
+
+.side-bar-division {
+  border-top: 1px solid #E8EAEB;
+}
+
+.side-bar input {
+  padding: 10px 10px 10px 30px;
+  width: 100%;
+  font-size: 1.125em; /* 18px */
+  font-style: italic;
+  border: none;
+  border-bottom: 1px solid #459FED;
+}
+
+.fa-search {
+  position: relative;
+  top: 33px;
+  left: 8px;
+}
+
+.side-bar h2 {
+  font-size: 1em; /* 16px */
+  color: #43515c;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.side-bar li {
+  margin: 20px 0;
+}
+
+.side-bar-marked {
+  background: #d3edff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.side-bar a {
+  color: #252525;
+}
+
+.side-bar a:hover {
+  color: #459FED;
+  padding-left: 5px;
+  font-size: 0.9375em; /* 15px */
+}
+
+.side-bar-marked a:hover {
+  font-size: 1em;
+  color: #252525;
+}
+
+.side-bar-arrow li a::before {
+  content: '>';
+  display: inline-block;
+  padding-right: 10px;
+  color: #459FED;
+  font-size: 1.2em; /* 19px */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Products */
+.product {
+  max-width: 960px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.product-header h1 {
+  font-weight: normal;
+  font-size: 2.5em; /* 40px */
+  text-align: center;
+  padding: 40px;
+}
+
+.product ul li {
+  float: left;
+  max-width: 460px;
+  padding: 0px 20px;
+}
+
+.product-itens li div {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product-itens span {
+  display: block;
+  text-align: center;
+  padding: 20px 0 30px 0;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background: #eaeded;
+  padding: 80px;
+  width: 100%;
+}
+
+.footer-nav > ul > li {
+  float: left;
+  margin: 0 20px;
+}
+
+.footer-nav h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.footer-nav-itens a {
+  display: block;
+  color: #43515c;
+  font-size: 0.875em; /* 14px */
+  margin-bottom: 16px;
+}
+
+.footer-nav-itens a:hover {
+  color: #459FED;
+}
+
+.footer-right {
+  float: right;
+  width: 300px;
+  margin-right: 120px;
+}
+
+.footer-right ul {
+  text-align: center;
+}
+
+.footer-right ul li {
+  display: inline-block;
+}
+
+.footer-right span {
+  font-weight: bold;
+}
+
+.footer-right p {
+  margin-top: 10px;
+  font-size: 0.875em; /* 14px */
+  color: #43515c;
+}
+
+.footer-right a {
+  color: #43515c;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-right ul li a {
+  display: block;
+  color: #43515c;
+  margin: 20px 5px;
+  font-size: 1.8em; /* 20px */
+}
+
+.footer-right ul li a:hover {
+  color: #459FED;
+}

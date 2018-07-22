@@ -24,12 +24,13 @@
     <a class="header-btn" href="#">Entrar</a>
   </header>
 
-  <main>
-    <div>
+  <main class="main-container">
+    <div class="side-bar">
       <nav>
         <ul>
           <li>
             <form method="post" action="">
+              <i class="fas fa-search"></i>
               <input type="search" name="busca" id="busca" placeholder="Ex. música, fotografia" />
             </form>
           </li>
@@ -38,20 +39,28 @@
             <ul>
               <li><a href="#">NOVOS!</a></li>
               <li><a href="#">Mais usados</a></li>
-              <li><a href="#">NOVOS!</a></li>
+              <li><a href="#">Em branco</a></li>
             </ul>
           </li>
-          <li>
+          <li class="side-bar-division">
             <h2>Categorias</h2>
-            <ul>
-              <li><a href="#">Ver todos os templates</a></li>
+            <span class="side-bar-marked"><a href="#">Ver todos os templates</a></span>
+            <ul class="side-bar-arrow">
               <li><a href="#">Negócios</a></li>
               <li><a href="#">Loja Virtual</a></li>
               <li><a href="#">Fotografia</a></li>
               <li><a href="#">Video</a></li>
               <li><a href="#">Música</a></li>
               <li><a href="#">Design</a></li>
-              <li><a href="#">Restaurante</a></li>
+              <li><a href="#">Restaurante e Comida</a></li>
+              <li><a href="#">Viagem e Turismo</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Portfólio e Currículo</a></li>
+              <li><a href="#">Blogs e Fóruns</a></li>
+              <li><a href="#">Saúde e Bem-Estar</a></li>
+              <li><a href="#">Moda e Beleza</a></li>
+              <li><a href="#">Comunidade e Educação</a></li>
+              <li><a href="#">Artes Criativas</a></li>
               <li><a href="#">Landing Pages</a></li>
             </ul>
           </li>
@@ -59,43 +68,58 @@
       </nav>
     </div>
 
-    <section>
+    <section class="product">
+      <header class="product-header">
       <h1>Escolha seu template favorito</h1>
-      <ul>
+      </header>
+      <ul class="product-itens">
         <li>
+          <div>
           <img src="img/product-1.jpg" alt="Product 1">
-          <span>Product 1</span>
+          </div>
+          <span>Em Breve - Landing Page</span>
         </li>
         <li>
+          <div>
           <img src="img/product-2.jpg" alt="Product 2">
-          <span>Product 2</span>
+          </div>
+          <span>Carros Vintage</span>
         </li>
         <li>
+          <div>
           <img src="img/product-1.jpg" alt="Product 1">
-          <span>Product 1</span>
+          </div>
+          <span>Em Breve - Landing Page</span>
         </li>
         <li>
+          <div>
           <img src="img/product-2.jpg" alt="Product 2">
-          <span>Product 2</span>
+          </div>
+          <span>Carros Vintage</span>
         </li>
         <li>
+          <div>
           <img src="img/product-1.jpg" alt="Product 1">
-          <span>Product 1</span>
+          </div>
+          <span>Em Breve - Landing Page</span>
         </li>
         <li>
+          <div>
           <img src="img/product-2.jpg" alt="Product 2">
-          <span>Product 2</span>
+          </div>
+          <span>Carros Vintage</span>
         </li>
       </ul>
     </section>
   </main>
 
-  <footer>
-    <nav>
+  <footer class="footer clear-fix">
+    <div class="">
+    <nav class="footer-nav">
       <ul>
         <li>
           <h3>Produto</h3>
-          <ul>
+          <ul class="footer-nav-itens">
             <li><a href="#">Templates</a></li>
             <li><a href="#">Explorar</a></li>
             <li><a href="#">Recursos</a></li>
@@ -107,7 +131,7 @@
         </li>
         <li>
           <h3>Empresa</h3>
-          <ul>
+          <ul class="footer-nav-itens">
             <li><a href="#">Sobre Wix</a></li>
             <li><a href="#">Relações com Investidores</a></li>
             <li><a href="#">Trabalhe na Wix</a></li>
@@ -118,7 +142,7 @@
         </li>
         <li>
           <h3>Comunidade</h3>
-          <ul>
+          <ul class="footer-nav-itens">
             <li><a href="#">Wix Blog</a></li>
             <li><a href="#">Wix Stores</a></li>
             <li><a href="#">Wix Arena</a></li>
@@ -127,30 +151,28 @@
         </li>
         <li>
           <h3>Suporte</h3>
-          <ul>
-            <li><a href="#">Wix Blog</a></li>
-            <li><a href="#">Wix Stores</a></li>
-            <li><a href="#">Wix Arena</a></li>
-            <li><a href="#">Wix Meetups</a></li>
+          <ul class="footer-nav-itens">
+            <li><a href="#">Central de Ajuda</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <div>
-      <a href="#">Logo</a>
-      <p>Wix.com é uma plataforma líder de desenvolvimento web baseada em nuvem com milhões de usuários em todo o mundo. Ficou mais fácil para todo mundo criar uma presença online incrível e profissional.</p>
+    <div class="footer-right">
+      <p><span>Wix.com</span> é uma plataforma líder de desenvolvimento web baseada em nuvem com milhões de usuários em todo o mundo. Ficou mais fácil para todo mundo criar uma presença online incrível e profissional.</p>
       <p>Promova o seu negócio, mostre seu talento, crie uma loja virtual ou apenas teste novas idéias. Wix é um construtor de site que tem tudo que você precisa para criar um site gratuito de alta qualidade e totalmente personalizado.</p>
-      <p>Pure CSS - Eduardo Dantas - #30days30sites - DAY 03 - original site</p>
+      <p>Pure CSS - Eduardo Dantas - #30days30sites</p>
+      <p>DAY 04 - <a href="https://goo.gl/7FBjXi" target="_blank">original site</a></p>
       <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Google+</a></li>
-        <li><a href="#">Youtube</a></li>
-        <li><a href="#">Pinterest</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Linkedin</a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>
+  </div>
   </footer>
 
 </body>
