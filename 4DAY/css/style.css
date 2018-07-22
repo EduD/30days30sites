@@ -267,3 +267,94 @@ a.header-btn:hover {
 .footer-right ul li a:hover {
   color: #459FED;
 }
+
+/* Responsivo */
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 980px) {
+  .header {
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 20px 10px 0px 10px;
+  }
+
+  .footer-right {
+    width: 700px;
+    margin: 0;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  
+  /* Menu */
+  .header {
+    padding: 10px 0px;
+  }
+  
+  .header-logo {
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+  
+  .header-nav ul {
+    margin: 0;
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+  
+  .header-nav a {
+    display: block;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .header-nav a:hover {
+    border-top: none;
+    color: #459FED;
+  }
+  
+  .header img {
+    right: 80%;
+    top: 80%;
+  }
+  
+  a.header-btn {
+    float: right;
+    padding: 10px 40px;
+  }
+
+  /* Sidebar */
+  .side-bar {
+    display: none;
+  }
+
+  /* Main */
+  .main-container {
+    flex-direction: column;
+  }
+
+  .product {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 10px 0px 10px;
+  }
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-right {
+    float: none;
+    padding: 0;  
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+}
