@@ -1,0 +1,179 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 05(five)
+  Original: https://www.outback.com/bar
+  Ps: pure css
+*/
+
+/* Reset */
+body, h1, h2, h3, p, span, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+h1, h2, h3 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  background: #A94949;
+}
+
+/* Menu */
+.menu {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  display: block;
+  color: #262524;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  margin: 0 5px;
+  font-size: 0.875em; /* 14px */
+}
+
+.menu-nav a:hover {
+  border-bottom: 1px solid;
+}
+
+.menu-nav li:first-child a {
+  color: #A94949;
+  border-bottom: 1px solid;
+}
+
+/* SideBar */
+.sidebar {
+  background: #1f1e1d url('../img/bg-texture.png');
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 40%;
+}
+
+.sidebar-logo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+/* Main */
+.main {
+  position: fixed;
+  top: 110px;
+  right: 0;
+  background: yellowgreen;
+  height: 100%;
+  width: 60%;
+  overflow: hidden;
+}
+
+#dinner.main-item { background: url('../img/180704-steak-shrimp-specials-bg-v2.jpg') }
+#lunch.main-item { background: url('../img/170320-specials-lunch-combos.jpg') }
+#bar.main-item { background: url('../img/180704-steak-shrimp-specials-bg-bar.jpg') }
+
+.main-item {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.main-item h1 {
+  font-size: 4.25em; /* 68px */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 80px;
+}
+
+.main-item h2 {
+  font-size: 1.625em; /* 26px */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.main-item h3 {
+  font-size: 1.25em; /* 20px */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.main-item p {
+  font-size: 1.06em; /* 17px */
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.main-item a {
+  display: inline-block;
+  background: rgba(0,0,0,.2);
+  font-size: 1.125em; /* 18px */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid;
+  padding: 20px 60px;
+  margin-top: 60px;
+}
+
+.sidebar-nav ul {
+  text-align: center;
+}
+
+.sidebar li { border-bottom: 2px solid #1A1918; }
+.sidebar li:last-child { border-bottom: none; }
+
+.sidebar li {
+  padding-top: 40px;
+}
+
+.sidebar ul:first-child {
+  padding-top: 120px;
+}
+
+.sidebar-nav a {
+  color: #888585;
+  font-size: 6.875em; /* 110px */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sidebar-nav a:hover { color: #fff; }
+.dinner:hover { background: url('../img/dinner_overlay.png') no-repeat center; }
+.lunch:hover { background: url('../img/lunch_overlay.png') no-repeat center; }
+.bar:hover { background: url('../img/bar_overlay.png') no-repeat center; }
