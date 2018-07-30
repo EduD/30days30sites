@@ -1,0 +1,146 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 06(six)
+  Original: http://www.jamespatterson.com/?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_6&utm_term=2018-07-27
+  Ps: pure css
+*/
+
+/* Reset */
+body, h1, h2, h3, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, span, a {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: #004eb5 url(../img/jp-masthead.jpg) center 49px no-repeat;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.button {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 6px;
+}
+
+.bb-button { background: #E52127; }
+.news-button { background: #FF5E00; border-radius: 4px;}
+.news-button:hover { color: #000 }
+.fa-envelope { margin-right: 5px; }
+
+.fa-search {
+  position: relative;
+  left: -30px;
+  color: #CCCCCC;
+}
+
+/* Super Div */
+.superdiv {
+  background: #00367C;
+  padding: 10px calc((100% - 960px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.superdiv input {
+  width: 240px;
+  padding: 5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+}
+
+/* Header */
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-nav {
+  background: #3F3F3F;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #222222;
+}
+
+.header-nav a {
+  color: #fff;
+  display: block;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  font-size: 0.875em; /* 14px */
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  border-right: 1px dotted #222222;
+}
+
+.header-nav li:first-child a{
+  background: #FF5E00;
+}
+
+.header-nav li a:hover {
+  background: #222222;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-slide {
+  background: #000;
+  flex: 2; 
+}
+
+.main-info {
+  background: #FEBF01;
+  flex: 1;
+  display: flex;
+  padding: 10px;
+}
+
+.main-info li {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.main-info-l { flex: 2;  color: #00367c;}
+.main-info-r { flex: 1; }
+
+.main-info-l a { color: #00367c; }
+.main-info-l a:hover { color: #FF5E00; }
+.main-info-l h2 { font-weight: bold; font-size: 0.8125em; /* 13px */ }
+.main-info-l p { font-size: 0.75em; /* 12px */ }
+
+.main-info-r { align-self: center; }
