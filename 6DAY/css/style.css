@@ -144,3 +144,377 @@ body {
 .main-info-l p { font-size: 0.75em; /* 12px */ }
 
 .main-info-r { align-self: center; }
+
+/* Middle */
+.middle {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.middle-item {
+  flex: 1;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  padding: 10px;
+}
+
+.middle-item h2, p, h3 {
+  padding: 5px 10px;
+}
+
+.middle-item:nth-child(1) h2,
+.middle-item:nth-child(1) p { max-width: 200px; } 
+
+.middle-item h3 {
+  color: #004EB5;
+  font-weight: bold;
+  max-width: 240px;
+}
+
+.middle-item a {
+  text-decoration: underline;
+  color: #004EB5;
+}
+
+.middle-item h2 a {
+  color: #004EB5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.middle-item a:hover {
+  color: #3a99fe;
+}
+
+.middle-item img{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Bottom */
+.bottom {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Bottom Left */
+.bottom-left {
+  flex: 2;
+}
+
+/* Movie Reviews */
+.bottom-left-movie-reviews {
+  padding: 10px;
+}
+
+.bottom-left-movie-reviews::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #cccccc;
+}
+
+.bottom-left-movie-reviews h2,
+.bottom-left-movie-reviews h3 {
+  font-weight: bold;
+  color: #004eb5;
+  font-size: 1.25em; /* 20px */
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-left-movie-reviews h3{
+  text-align: right;
+}
+
+.bottom-left-movie-reviews ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-left-movie-reviews li {
+  padding: 0px 10px;
+}
+
+.bottom-left-movie-reviews li a:hover {
+  opacity: 0.8;
+}
+
+.bottom-left-movie-reviews a:hover h3 {
+  color: #FF5E00;
+}
+
+/* Bottom Info */
+.bottom-left-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.bottom-left-info-left { flex: 1; max-width: 200px; }
+.bottom-left-info-right { flex: 1; }
+
+.bottom-left-info-left li {
+  border-bottom: 1px solid #cccccc;
+}
+
+.bottom-left-info-left h2 {
+  font-weight: bold;
+  color: #004eb5;
+  margin: 10px 0;
+}
+
+.bottom-left-info-left > h2 {
+  font-weight: bold;
+  color: #3f3f3f;
+  font-size: 1.25em; /* 20px */
+  margin: 0 0 10px 0;
+}
+
+.bottom-left-info-left img {
+  margin: 0 auto;
+}
+
+.bottom-left-info-left p {
+  font-style: italic;
+  padding: 5px 0;
+  font-size: 0.875em /* 14px */
+}
+
+.bottom-left-info-left a {
+  color: #004eb5;
+  text-decoration: underline;
+}
+
+.bottom-left-info-left a:hover {
+  color: #FF5E00;
+  text-decoration: none;
+}
+
+.bottom-left-info-right img {
+  margin: 0 auto;
+}
+
+/* Bottom Right */
+.bottom-right {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Item Top */
+.bottom-right-item-top li:nth-child(2n+1) {
+  background: #D3E4E5;
+}
+
+.bottom-right-item-top li.bottom-right-item-top-title {
+  background: #0F62B3;
+  color: #fff;
+}
+
+.bottom-right-item-top-title h2 { font-weight: bold; }
+.bottom-right-item-top span, a { font-size: 0.75em; /* 12px */ }
+.bottom-right-item-top ul { border: 1px solid #555555; }
+.bottom-right-item-top li:last-child { padding: 7px 5px; }
+
+.bottom-right-item-top li:not(:last-child) {
+  padding: 7px 5px;
+  border-bottom: 1px dotted #555555;
+}
+
+
+.bottom-right-item-top span { margin-right: 5px; }
+
+.bottom-right-item-top a {
+  color: #004eb5;
+  text-decoration: underline;
+}
+
+.bottom-right-item-top a:hover {
+  color: #FF5E00;
+}
+
+.bottom-right-item-top li a:last-child::before {
+  content: '|';
+  display: inline-block;
+  margin: 0 3px;
+  color: #999;
+}
+
+/* Item Bottom */
+.bottom-right-item-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.bottom-right-item-bottom li {
+  flex: 1 1 80px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.bottom-right-item-bottom h2 {
+  background: #0F62B3;
+  color: #fff;
+  margin: 20px 0;
+  padding: 7px 5px;
+  font-weight: bold;
+  border: 1px solid #555555;
+}
+
+.bottom-right-item-bottom h3 {
+  font-weight: bold;
+  font-size: 0.875em; /* 12px */
+  max-width: 80px;
+  padding: 0;
+  color: #004EB5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bottom-right-item-bottom h3:hover {
+  color: #FF5E00;
+}
+
+.bottom-right-item-bottom span {
+  display: inline-block;
+  font-size: 0.875em; /* 14px */
+  margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+  background: #00367C;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* Footer Break */
+.footer-break {
+  padding: 40px 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+.footer-break img { margin-right: 40px; }
+.footer-break a { margin-left: 10px; }
+
+/* Footer Info */
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+.footer-info-item li {
+  margin: 10px 0;
+}
+
+.footer-info a { color: #fff; }
+.footer-info a:hover { color: #FF5E00; }
+
+.footer-info-item span {
+  font-size: 0.8125em; /* 13px */
+  flex: 1;
+  color: #aaaaaa;
+}
+
+.footer-info-item a.footer-a {
+  font-size: 0.8125rem; /* 13px */
+  color: #aaaaaa;
+}
+
+.footer-info-item a.footer-a:hover { text-decoration: underline; }
+
+/* Responsive */
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  body {
+    background: #004eb5;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  /* Super Div */
+  .superdiv { flex-direction: column; }
+  .superdiv input { margin-bottom: 10px; }
+
+  /* Header */
+  .header-logo img {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .header-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-nav a {
+    padding: 20px 0px;
+    border: none;
+  }
+
+  /* Main */
+  .main-info { display: none; }
+
+  /* Middle */
+  .middle-item img { display: none; }  
+
+  /* Bottom */
+  .bottom { flex-direction: column; }
+  .bottom-left-movie-reviews li { padding: 10px 5px;}
+  .bottom-left-movie-reviews li:last-child { display: none; }
+  .bottom-left-info-left { margin: 0 auto; }
+  .bottom-left-info-right { display: none; }
+
+  /* Footer */
+
+  /* Footer Break */
+  .footer-break {
+    padding: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-break img { margin: 0; }
+  .footer-break a { margin: 5px; }
+
+  .footer-info .footer-info-item:not(:first-child) {
+    display: none;
+  }
+
+  .footer-info {
+    padding: 0;
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 960px) {
+  .container{
+    max-width: 720px;
+  }
+
+  /* Super Div */
+  .superdiv { justify-content: space-around; }
+
+  /* Middle */
+  .middle-item img { display: none; }
+
+  /* Bottom */
+  .bottom-left-movie-reviews li { padding: 5px; }
+  .bottom-left-movie-reviews li:last-child { display: none; }
+
+}
