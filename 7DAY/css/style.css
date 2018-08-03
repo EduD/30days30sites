@@ -1,0 +1,131 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 07(seven)
+  Original: http://www.theshack.movie/?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_7&utm_term=2018-08-03#home
+  Ps: pure css
+*/
+
+/* Reset */
+body, ul, li, span { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: #fff; }
+img { display: block; max-width: 100%; }
+* { box-sizing: border-box; }
+
+body {
+  background: teal;
+  font-family: 'Cinzel', serif;
+}
+
+/* Container */
+.container {
+  background: url('../img/the-shack-landscape-wide.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu { flex: 1; color: #fff; z-index: 1; }
+.logo { flex: 1; z-index: 1; }
+.buy {   z-index: 1; }
+
+/* Menu */
+.menu-nav ul {
+  margin: 0 0 40px 40px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.125em; /* 18px */
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+.menu a:hover { text-shadow: 0 0 15px #fff; }
+.menu-footer { margin: 0 0 10px 40px; }
+.menu-footer span { font-size: 0.875em; /* 14px */ }
+.menu-footer ul { margin: 10px 0 40px 0; }
+.menu-footer li { display: inline-block; }
+.menu-footer li a { padding: 10px; }
+.menu-footer .legal { font-size: 0.75em; /* 12px */ }
+
+/* Buy Section */
+.buy {
+  display: flex;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.buy-item { padding: 0 10px; }
+.buy-item p, a { font-size: 0.875em; /* 14px */ }
+
+.buy-item a {
+  background: #011125;
+  padding: 5px 20px;
+}
+
+/* Snow */
+.snow2 {
+  background: url('../img/snow.png');
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animateTwo 10s infinite linear;
+  background-size: 200px;
+  filter: blur(1px);
+}
+
+.snow3 {
+  background: url('../img/snow.png');
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animateThree 10s infinite linear;
+  background-size: 100px;
+  filter: blur(1px);
+}
+
+@keyframes animateOne {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 100px 650px;
+  }
+}
+@keyframes animateTwo {
+  0% {
+    background-position: 0px -100px;
+  }
+  100% {
+    background-position: 0px 100%;
+  }
+}
+@keyframes animateThree {
+  0% {
+    background-position: 0px 100px;
+  }
+  100% {
+    background-position: 300px 100%;
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 739px) {
+  .buy {
+    display: none;
+  }
+}
