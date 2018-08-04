@@ -15,3 +15,5 @@ DAY 5 - https://day5eduardodantas.netlify.com/
 DAY 6 - https://day6eduardodantas.netlify.com/
 
 DAY 7 - https://day7eduardodantas.netlify.com/
+
+DAY 8 - https://day8eduardodantas.netlify.com/
