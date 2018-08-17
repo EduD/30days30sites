@@ -1,0 +1,257 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 10(teen)
+  Original: http://www.wheatonarts.org/?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_10&utm_term=2018-08-16
+  Ps: pure css
+*/
+
+/* Reset */
+body, h1, h2, p, ul, li, span, i {
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+img { display: block; max-width: 100%; }
+h1, h2 { font-weight: normal; font-size: 1em; }
+* { box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Super div */
+.super {
+  border-bottom: 1px solid #cccccc;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.super li {
+  display: inline-block;
+}
+
+.super li span {
+  border-left: 1px solid #cccccc;
+}
+
+.super a {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  transition: .3s;
+  text-align: center;
+}
+
+.super a:hover {
+  color: #5f8cb4;
+}
+
+.super span {
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  margin-right: -5px;
+  padding-top: 5px;
+  text-align: center;
+}
+.super li:hover span.fall {
+  transform: translateY(0px);
+}
+
+span.fac.fall { background: #4a6d9d; }
+span.twi.fall { background: #3bc1ed; }
+span.pin.fall { background: #cb1f25; }
+span.ins.fall { background: #3f6f94; }
+
+span.fall {
+  position: absolute;
+  transform: translateY(-50px);
+  background: currentColor;
+  color: #fff;
+  transition: transform .3s;
+}
+
+/* Menu */
+.menu {
+  padding: 30px 0;
+}
+
+.menu-logo h1 {
+  display: none;
+}
+
+.menu-logo {
+  padding-bottom: 100px;
+}
+
+.menu-nav ul {
+  text-align: end;
+}
+
+.menu-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu-nav a {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #000;
+  position: relative;
+  transition: color .3s;
+}
+
+.menu-nav a::before {
+  content: '';
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #c41230;
+  transition: width .3s;
+}
+
+.menu-nav a:hover {
+  color: #c41230;
+}
+
+.menu-nav a:hover::before {
+  width: 100%;
+}
+
+.menu-nav i {
+  margin-left: 10px;
+}
+
+/* Main */
+.main {
+  background: #E9E9E9;
+  position: relative;
+  height: 400px;
+}
+
+.main-item-01, .main-item-02{
+  position: absolute;
+}
+
+.main-item-01 {
+  z-index: 1;
+  opacity: 0;
+  animation: 4s minhaAnim infinite alternate-reverse;
+}
+
+@keyframes minhaAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Info */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.info-item {
+  flex: 0 0 260px;
+}
+
+.info-item h2 {
+  font-size: 24px;
+}
+
+.info-item > * {
+  margin: 10px 0;
+}
+
+.info-item p {
+  font-size: 14px;
+}
+
+.info-item a {
+  display: inline-block;
+  font-size: 14px;
+  color: #c41230;
+  border: 1px solid;
+  padding: 10px 20px;
+  transition: .3s;
+}
+
+.info-item a:hover {
+  background-color: #c41230; 
+  color: #fff;
+}
+
+.news h2 {
+  font-size: 24px;
+}
+
+.news a {
+  color: #c41230;
+}
+
+.news a:hover {
+  color: #000;
+}
+
+.news p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.about-item h2 {
+  font-size: 24px;
+}
+
+.about-item p {
+  font-size: 14px;
+}
+
+.about-item > * {
+  margin: 10px 0;
+}
+
+.about-item {
+  flex: 0 0 33.333%;
+}
+
+.about-item a {
+  display: inline-block;
+  font-size: 14px;
+  color: #c41230;
+  border: 1px solid;
+  padding: 10px 20px;
+  transition: .3s;
+}
+
+.about-item a:hover {
+  background-color: #c41230; 
+  color: #fff;
+}
