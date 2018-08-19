@@ -1,0 +1,241 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 11(eleven)
+  Original: http://www.njfta.org/members/?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_11&utm_term=2018-08-19
+  Ps: pure css
+*/
+
+/* Reset */
+body, h1, h2, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+li { list-style: none;; }
+a { text-decoration: none; }
+img { max-width: 100%; display: block; }
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* SUPER */
+.super { 
+  background: #B7E876;
+  padding: 10px 0;
+}
+
+.super-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.super a {
+  color: #000;
+  font-weight: bold;
+  font-size: 0.75rem; /* 12px */
+  padding: 0 5px;
+}
+.super a:hover { color:rgba(0, 0, 0, 0.7); }
+
+/* Menu */
+.menu {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem; /* 14px */
+}
+.menu a:hover { color: #333333; }
+
+/* Main */
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+  color: #222222;
+}
+
+.main-container h1 {
+  font-family: 'Racing Sans One', cursive;
+  color: #3a9b00;
+  font-size: 2.25em; /* 36px */
+  margin-bottom: 30px;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-list li { 
+  flex: 0 0 calc(33.333% - 50px);
+  margin-bottom: 20px;
+}
+.main-list li:nth-of-type(3n+2) { margin: 0 25px; }
+
+.main-list h2 {
+  font-size: 1.625rem; /* 26px */
+  font-weight: normal;
+  padding: 20px 0;
+}
+
+.main-list p {
+  line-height: 1.875rem; /* 30px */
+}
+
+.main-list a {
+  color: #00a100;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Footer */
+
+.footer {
+  background: #2D2D2D;
+  padding: 10px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #fff;
+  font-size: 0.875rem; /* 14px */
+  padding: 10px;
+}
+.footer-nav a:hover {
+  color: #bbbbbb;
+}
+
+.footer-copy {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.footer-copy a { color: #000; }
+.footer-copy a:hover { text-decoration: underline; } 
+
+/* Responsive */
+/* mobile */
+@media only screen and (max-width: 739px) {
+  
+  /* Super */
+  .super-container {
+    max-width: 300px;
+    justify-content: space-around;
+  }
+
+  /* Menu */
+  .menu-container {
+    max-width: 300px;
+    justify-content: space-around;
+  }
+  
+  .menu-nav ul { display: none; }
+  .menu-nav span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-top: 4px solid #00a100;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-nav span::after, .menu-nav span::before {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: #00a100;
+    position: relative;
+    transition: transform .2s ease;
+  }
+  
+  .menu-nav span:hover {
+    border-top-color: transparent;
+  }
+  
+  .menu-nav span:hover::after {
+    margin-top: 0px;
+    top: 2px;
+    transform: rotate(45deg);
+  }
+  
+  .menu-nav span:hover::before {
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+  }
+
+  /* Main */
+  .main-container {
+    max-width: 300px;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .main-container h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: #3a9b00;
+    font-size: 2em; /* 32px */
+    margin-bottom: 20px;
+  }
+  
+  .main-list {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  .main-list li:nth-of-type(3n+2) { margin: 0; }
+
+  /* Footer */
+  .footer-container {
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .footer-copy {
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.875rem; /* 14px */
+  }
+
+}
+
+@media only screen and (min-width: 740px) and (max-width: 960px) {
+  .menu-container { justify-content: center; }
+  .main-container { text-align: center; }
+  .footer-container { justify-content: center; }
+  .footer-copy { text-align: center; }
+}
