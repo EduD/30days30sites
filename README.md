@@ -23,3 +23,5 @@ DAY 9 - https://day9eduardodantas.netlify.com/
 DAY 10 - https://day10eduardodantas.netlify.com/
 
 DAY 11 - https://day11eduardodantas.netlify.com/
+
+DAY 12 - https://day12eduardodantas.netlify.com/
