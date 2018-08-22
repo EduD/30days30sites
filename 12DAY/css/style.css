@@ -1,0 +1,273 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 12(twelve)
+  Original: http://www.oprah.com/app/books.html?utm_source=newsletter&utm_medium=email&utm_campaign=30_days_30_sites_day_12&utm_term=2018-08-20
+  Ps: pure css
+*/
+
+/* Reset */
+body ,h1 ,h2 ,h3 ,p ,input, li{
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+* { box-sizing: border-box; }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  height: 16px;
+  width: 16px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: #EFEFEF;
+}
+
+/* Menu */
+.menu {
+  background: #383637;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.menu-mobile {
+  content: '';
+  height: 24px;
+  width: 24px;
+  display: block;
+  border-top: 4px solid #727272;
+  cursor: pointer;
+}
+
+.menu-mobile::before, .menu-mobile::after {
+  content: '';
+	display: block;
+	height: 4px;
+	margin-top: 6px;
+	background: #727272;
+	position: relative;
+	transition: transform .2s ease;
+}
+
+.menu-mobile:hover {
+  border-top-color: transparent;
+}
+
+.menu-mobile:hover::after {
+  margin-top: 0px;
+	top: 2px;
+	transform: rotate(45deg);
+}
+
+.menu-mobile:hover::before{
+  margin-top: 0px;
+	top: 6px;
+	transform: rotate(135deg);
+}
+
+.menu-form { position: relative; }
+
+.menu-form input[type="search"] {
+  background: #625E5F;
+  padding: 5px 5px 5px 24px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  width: 40px;
+  transition: width .5s ease-in;
+}
+
+.menu-form input[type="search"]:focus { width: 300px; }
+
+.menu-form .btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #383637;
+}
+
+/* Main */
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-item {
+  padding: 20px 10px;
+  position: relative;
+}
+
+.main-title {
+  color: #fff;
+  transform: translateY(-114px);
+  padding: 10px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.main-title h2 {
+  font-size: 46px;
+  font-weight: normal;
+}
+
+/* Section 1 */
+.section-1 {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-1-item {
+  flex: 1 1 calc(50% - 40px);
+  padding: 10px;
+}
+
+.section-1-item h2 {
+  font-size: 19px;
+  color: #739f8e;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Section 2 */
+.section-2 {
+  max-width: 960px;
+  margin: 60px auto;
+  background: url('../img/section-2-bg.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 305px;
+}
+
+.section-2 h2 {
+  color: #fff;
+  max-width: 600px;
+  padding: 80px 0 20px 0;
+}
+
+.section-2 input[type="email"] {
+  background: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  font-size: 21px;
+}
+
+.section-2 button {
+  background: #739F8E;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 21px;
+  color: #fff;
+  border: none;
+}
+
+/* Section 3 */
+.section-3 {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.section-3 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-3 li {
+  flex: 0 0 calc(33.333% - 20px);
+  padding: 10px;
+}
+
+.section-3 h2 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #739f8e;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.section-3 img {
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+  background: #353535;
+  padding: 30px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  flex: 0 0 calc(50% - 20px);
+  padding: 10px;
+}
+
+.footer-item h2 {
+  font-weight: normal;
+}
+
+.footer-item p {
+  color: #9d9b9b;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-item nav ul {
+  border-right: 1px solid #000;
+}
+
+.footer-item a {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  background: #353535;
+  text-align: center;
+  font-size: 14px;
+  color: #625E5F;
+}
+
+.footer-copy a {
+  color: #fff;
+}
+
+.footer-copy a:hover {
+  text-decoration: underline;
+}
