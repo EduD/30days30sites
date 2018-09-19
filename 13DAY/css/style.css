@@ -1,0 +1,127 @@
+/* #30days30sites 
+  Author: Eduardo Dantas
+  Day: 13(thirteen)
+  Original: https://www.lipton.com/us/en/home.html
+  Ps: pure css
+*/
+
+/* Base styles */
+body, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Super */
+.super {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+} 
+  .super__item {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #000;
+    margin: 10px;
+    position: relative;
+  }
+    .super__item:not(:last-child):hover::before {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      height: 1px;
+      width: 100%;
+      background: #000;
+    }
+
+/* Header */
+.header {
+  background: #FFE600;
+  padding: 0 10px;
+  position: relative;
+}
+  .header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    overflow: visible;
+    position: relative;
+  }
+    .header__link {
+      color: #e50000;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 22px 0;
+      margin: 0 40px;
+      position: relative;
+    }
+      .header__link:hover::before {
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        bottom: 0;
+        background: #e50000;
+      }
+  
+  .header__icons {
+    position: absolute;
+    top: 20px;
+    right: 2%;
+  }
+    .header__icon {
+      background: #e50000;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+    }
+      .header__icon:hover {
+        background: #b70000;
+      }
+
+      .header__icon.has-topper::before {
+        content: '0';
+        position: absolute;
+        top: -4px;
+        right: -6px;
+        padding: 6px;
+        border-radius: 20px;
+        background: #fff;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+      }
