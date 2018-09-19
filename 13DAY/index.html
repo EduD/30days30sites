@@ -17,9 +17,10 @@
   </div>
 
   <header class="header">
+    <span class="header__mobile"><!-- menumobile --></span>
     <div class="container">
       <nav>
-        <ul class="header_nav">
+        <ul class="header__nav">
           <li><a class="header__link" href="#">Our teas</a></li>
           <li><a class="header__link" href="#">Cult of tea</a></li>
           <li>
@@ -43,41 +44,51 @@
   </header>
 
   <main class="main">
-    <!-- build a slide only css -->
-    <div>
-      <img src="img/slide1.jpg" alt="slide1">
+    <div class="main__item slide1" id="slide1">
+      <h1 class="main__title">REFRESHINGLY<br>OPTIMISTIC</h1>
+      <p class="main__info">We’ve been there with you through all of life’s moments, big and small. Here’s to many more! Lipton. Refreshingly Optimistic.</p>
+      <a class="main__button u-button" href="#">Find out more</a>
+    </div>
+    <div class="main__item slide2" id="slide2">
+      <h1 class="main__title">GOODNESS OF TEA</h1>
+      <p class="main__info">Green tea with pure Japanese matcha to find your focus and enjoy a moment of goodness.</p>
+      <a class="main__button u-button" href="#">Find out more</a>
+    </div>
+    <div class="main__item slide3">
+      <h1 class="main__title">NEW LIPTON ORGANIC</h1>
+      <p class="main__info">The new Lipton Organic Black Tea is made with the finest USDA Organic and Rainforest Alliance certified black tea leaves picked at the peak of freshness from the Kenyan Highlands.</p>
+      <a class="main__button u-button" href="#">Find out more</a>
     </div>
   </main>
 
-  <section>
-    <!-- icon here -->
-    <h1>It's the little things</h1>
-    <p>A cup of hot tea in the afternoon; a refreshing iced tea on a sunny day. At home or on the go, alone or together, we’ve been making little Lipton® moments since 1880. Welcome to the wonderful world of tea.</p>
-    <a href="#">Explore our teas</a>
+  <section class="info">
+    <h1 class="info__title u-title">It's the little things</h1>
+    <p class="info__text u-text">A cup of hot tea in the afternoon; a refreshing iced tea on a sunny day. At home or on the go, alone or together, we’ve been making little Lipton® moments since 1880. Welcome to the wonderful world of tea.</p>
+    <a class="info__button u-button" href="#">Explore our teas</a>
   </section>
 
-  <section>
-    <div>
-      <h1>The History of Lipton® Tea</h1>
-      <p>Growing up in a tenement building in Glasgow, there was nothing to suggest that Sir Thomas Lipton would go on to revolutionize the future of tea. Yet before long, his publicity stunts and wacky marketing campaigns cemented his place in the history of tea.</p>
-      <a href="#">Read more</a>
+  <section class="about">
+    <div class="about__box">
+      <h1 class="u-title">The History of Lipton® Tea</h1>
+      <p class="u-text">Growing up in a tenement building in Glasgow, there was nothing to suggest that Sir Thomas Lipton would go on to revolutionize the future of tea. Yet before long, his publicity stunts and wacky marketing campaigns cemented his place in the history of tea.</p>
+      <a class="about__button u-button" href="#">Read more</a>
     </div>
   </section>
 
-  <section>
-    <h1>My tea, My way</h1>
-    <ul>
-      <li>
+  <section class="products">
+    <h1 class="u-title">My tea, My way</h1>
+    <ul class="products__items container">
+      <li class="products__item">
         <img src="img/item1.jpg" alt="item 1">
-        <a href="#">Explore hot tea</a>
+        <a class="products__button u-button" href="#">Explore hot tea</a>
       </li>
-      <li>
+      <li class="products__item">
         <img src="img/item2.jpg" alt="item 2">
-        <a href="#">Explore iced tea</a>
+        <a class="products__button u-button" href="#">Explore iced tea</a>
       </li>
-      <li>
+      <li class="products__item">
         <img src="img/item3.jpg" alt="item 3">
-        <a href="#">Explore k-cups</a>
+        <a class="products__button u-button" href="#">Explore k-cups</a>
       </li>
     </ul>
   </section>
@@ -87,47 +98,47 @@
   </div>
 
   <footer class="footer">
-    <ul>
-      <li>
+    <ul class="container footer__items">
+      <li class="footer__item">
         <img src="img/logo.png" alt="logo footer">
       </li>
-      <li>
+      <li class="footer__item">
         <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Join the Tea Club</a></li>
-          <li><a href="#">PepsiCo</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">AdChoices Adchoices</a></li>
+          <li><a class="footer__link" href="#">Help Center</a></li>
+          <li><a class="footer__link" href="#">Privacy Policy</a></li>
+          <li><a class="footer__link" href="#">Join the Tea Club</a></li>
+          <li><a class="footer__link" href="#">PepsiCo</a></li>
+          <li><a class="footer__link" href="#">Terms of Service</a></li>
+          <li><a class="footer__link" href="#">AdChoices Adchoices</a></li>
         </ul>
       </li>
-      <li>
+      <li class="footer__item">
         <ul>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Store Locator</a></li>
-          <li><a href="#">Unilever</a></li>
-          <li><a href="#">Food Services</a></li>
-          <li><a href="#">Sitemap</a></li>
+          <li><a class="footer__link" href="#">Accessibility</a></li>
+          <li><a class="footer__link" href="#">Store Locator</a></li>
+          <li><a class="footer__link" href="#">Unilever</a></li>
+          <li><a class="footer__link" href="#">Food Services</a></li>
+          <li><a class="footer__link" href="#">Sitemap</a></li>
         </ul>
       </li>
-      <li>
+      <li class="footer__item">
         <ul>
-          <li><a href="#"><img src="img/icon-facebook.png" alt="facebook"></a></li>
-          <li><a href="#"></a><img src="img/icon-twitter.png" alt="twitter"></li>
-          <li><a href="#"><img src="img/icon-youtube.png" alt="youtuber"></a></li>
-          <li><a href="#"><img src="img/icon-instagram.png" alt="instagram"></a></li>
+          <li class="footer__list"><a href="#"><img class="footer__icon" src="img/icon-facebook.png" alt="facebook"></a></li>
+          <li class="footer__list"><a href="#"></a><img class="footer__icon" src="img/icon-twitter.png" alt="twitter"></li>
+          <li class="footer__list"><a href="#"><img class="footer__icon" src="img/icon-youtube.png" alt="youtuber"></a></li>
+          <li class="footer__list"><a href="#"><img class="footer__icon" src="img/icon-instagram.png" alt="instagram"></a></li>
         </ul>
       </li>
     </ul>
   </footer>
 
   <div class="copy">
-    <a href="#">
-      <img src="img/unileverlogo.png" alt="unileverlogo">
+    <a class="copy__link" href="#">
+      <img class="copy__logo" src="img/unileverlogo.png" alt="unileverlogo">
       <p>&copy; Unilever</p>
     </a>
 
-    <p>Pure CSS - Eduardo Dantas - #30days30sites | DAY 13 - <a href="https://www.lipton.com/us/en/home.html" target="_blank">original site</a></p>
+    <p class="copy__text">Pure CSS - Eduardo Dantas - #30days30sites | DAY 13 - <a class="copy__link" href="https://www.lipton.com/us/en/home.html" target="_blank">original site</a></p>
   </div>
 
 </body>
